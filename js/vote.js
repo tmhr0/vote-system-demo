@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const selectedCandidateId = document.querySelector('input[name="candidate"]:checked');
         if (selectedCandidateId) {
-            window.location.href = `/vote/confirm.html?candidate=${selectedCandidateId.value}`;
+            window.location.href = `/vote-system-demo/vote/confirm.html?candidate=${selectedCandidateId.value}`;
         } else {
             alert('候補者を選択してください。');
         }

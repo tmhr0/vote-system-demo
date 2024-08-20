@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (!candidateId) {
         alert('候補者IDが指定されていません。');
-        window.location.href = '/vote/index.html';
+        window.location.href = '/vote-system-demo/vote/index.html';
         return;
     }
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (error || !session) {
             alert('ログインが必要です');
-            window.location.href = '/login';
+            window.location.href = '/vote-system-demo/login';
             return;
         }
 

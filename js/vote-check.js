@@ -1,7 +1,7 @@
 import { supabase } from './supabase.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const voteResultLink = document.querySelector('a[href="/vote/result.html"]');
+    const voteResultLink = document.querySelector('a[href="/vote-system-demo/vote/result.html"]');
     const loginButton = document.querySelector('.btn-screen');
 
     // ログイン状態を確認

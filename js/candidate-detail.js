@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (!candidateId) {
         alert('候補者IDが指定されていません。');
-        window.location.href = '/candidate/index.html';
+        window.location.href = '/vote-system-demo/candidate/index.html';
         return;
     }
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const detailContainer = document.getElementById('candidate-detail');
     detailContainer.innerHTML = `
         <div class="candidate-photo-container">
-            <img src="/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
+            <img src="/vote-system-demo/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
         </div>
         <div class="candidate-info">
             <div class="candidate-attribute__title">
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // 投票ボタンのリンクに候補者IDを付与
     const confirmVoteBtn = document.getElementById('confirm-vote-btn');
-    const candidateUrl = `/vote/index.html?candidate=${candidate.id}`;
+    const candidateUrl = `/vote-system-demo/vote/index.html?candidate=${candidate.id}`;
     confirmVoteBtn.href = candidateUrl;
     console.log("Vote URL set to:", candidateUrl); // デバッグメッセージ
 

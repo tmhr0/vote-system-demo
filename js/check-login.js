@@ -2,8 +2,8 @@ import { supabase } from './supabase.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const linksToCheck = [
-        { id: 'vote-link', href: '/vote' },
-        { id: 'confirm-vote-btn', href: '/vote' },
+        { id: 'vote-link', href: '/vote-system-demo/vote' },
+        { id: 'confirm-vote-btn', href: '/vote-system-demo/vote' },
     ];
 
     linksToCheck.forEach(linkData => {
@@ -11,14 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (linkElement) {
             linkElement.addEventListener('click', async (event) => {
-                event.preventDefault();  // デフォルトのリンク動作を防ぐ
+                event.preventDefault();
 
-                // ログイン状態をチェック
                 const { data: { session }, error } = await supabase.auth.getSession();
 
                 if (error || !session) {
                     // 非ログイン状態なら、ログインページへリダイレクト
-                    window.location.href = '/login';
+                    window.location.href = '/vote-system-demo/login';
                 } else {
                     // ログイン済みなら指定のページへ遷移
                     window.location.href = linkData.href;

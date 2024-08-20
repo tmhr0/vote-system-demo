@@ -26,12 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (error || !session) {
             console.error('Error getting session or session not found:', error);
             alert('ログインが必要です');
-            window.location.href = '/login';
+            window.location.href = '/vote-system-demo/login';
             return;
         }
 
         const userEmail = session.user.email;
-        console.log('User Email:', userEmail);
 
         const { data: userData, error: userError } = await supabase
             .from('user')
@@ -59,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('投票の登録に失敗しました');
         } else {
             console.log('投票が登録されました:', voteData);
-            window.location.href = 'complete.html';
+            window.location.href = 'vote-system-demo/vote/complete.html';
         }
     });
 });
