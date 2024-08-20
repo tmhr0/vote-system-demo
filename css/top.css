@@ -1,0 +1,132 @@
+.hidden {
+    display: none;
+}
+
+.top-header__title {
+  text-align: start;  
+}
+
+.top-header {
+  padding: 18px 0px;
+}
+
+.header__settings-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header__settings-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1e1f23;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.header__settings-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header__settings-content a:hover {
+  background-color: #005bb5;
+}
+
+.header__settings-dropdown:hover .header__settings-content {
+  display: block;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.main-info {
+  margin-top: 20px;
+}
+
+.main-info__title {
+  font-size: 32px;
+  margin: 0;
+}
+
+.main-info__description {
+  margin: 10px 0;
+}
+
+.main-info__election-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-info__election-day-title {
+  color: #fff;
+}
+
+.main-info__election-day-date {
+  color: #9CABBA;
+}
+
+.main-info__election-day-image {
+  width: 130px;
+  height: 64px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 150px;
+}
+
+.nav__item {
+  margin: 10px 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav__link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.nav__link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link-title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.nav__link-description {
+  font-size: 14px;
+  color: #9CABBA;
+}
+
+.nav__arrow {
+  font-size: 24px;
+}

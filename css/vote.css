@@ -1,0 +1,126 @@
+.container {
+  padding: 0;
+}
+
+.header {
+  padding: 28px 16px 20px 16px;
+}
+
+.header__title {
+  flex-grow: 0.55;
+  text-align: start;
+}
+
+.vote-info {
+  text-align: start;
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
+.vote-info h2 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.vote-info p {
+  font-size: 16px;
+}
+
+.candidate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px;
+  margin-bottom: 150px;
+}
+
+.candidate-card {
+  display: flex;
+  align-items: center;
+  background-color: #1e1f23;
+  padding: 15px;
+  height: 65px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  border-color: #2E3B45;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.candidate-card:hover {
+  border-color: #005bb5;
+}
+
+.candidate-card.selected {
+  border-color: #0A61C2;
+}
+
+.candidate-card input[type="radio"] {
+  display: none;
+}
+
+.candidate-content {
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s;
+}
+
+.candidate-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 10px 0 34px;
+  object-fit: cover;
+}
+
+.candidate-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #9CABBA;
+  max-height: 42px;
+  overflow-y: auto;
+}
+
+.candidate-info h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.candidate-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #9CABBA;
+}
+
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #2E3B45;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #0A61C2;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+input[type="radio"]:checked + .candidate-content .radio-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+input[type="radio"]:not(:checked) + .candidate-content .radio-custom::after {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+input[type="radio"]:checked + .candidate-content .radio-custom {
+  border-color: #0A61C2;
+}

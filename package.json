@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node js/loginTest.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.7"
+  }
+}

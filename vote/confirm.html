@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投票者確認</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/confirm.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">投票確認</h1>
+    </header>
+    <div class="confirm-info">
+      <h2>投票先を確認</h2>
+      <div class="selected-candidate" id="selected-candidate">
+      </div>
+      <p>本当にこの候補者に投票しますか？</p>
+      <div class="btn-section">  
+        <a href="/vote/index.html" class="gray-btn">もどる</a>
+        <button id="submit-vote-btn" class="blue-btn">投票確定</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/js/confirm.js" defer></script>
+</body>
+</html>

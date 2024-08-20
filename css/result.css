@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+}
+
+.header {
+  justify-content: normal;
+  padding-bottom: 20px;
+}
+
+.header__title {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.result-info h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.result-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.result-list {
+    margin-top: 16px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.result-candidate-name {
+    font-size: 16px;
+}
+
+.result-candidate-votes {
+    font-size: 16px;
+}

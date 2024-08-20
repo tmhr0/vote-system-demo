@@ -1,0 +1,105 @@
+body {
+  background-color: #121417;
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__title {
+  font-size: 18px;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.confirm-info {
+    text-align: start;
+}
+
+.confirm-info h2 {
+  font-size:  22px;
+  margin: 20px 0 36px 0;
+}
+
+.selected-candidate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.candidate-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.candidate-details h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.candidate-details p {
+  margin: 5px 0 0;
+  color: #9CABBA;
+  font-size: 14px;
+  max-height: 42px;
+  overflow-y: auto;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.gray-btn,
+.blue-btn {
+  width: 84px;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blue-btn {
+  position: relative;
+  bottom: auto;
+}
+
+.gray-btn {
+  background-color: #26303B;
+  color: #ffffff;
+}
+
+.gray-btn:hover {
+  background-color: #384756;
+}
+
+.submit-btn {
+  background-color: #0A61C2;
+  color: #ffffff;
+}
+
+.submit-btn:hover {
+  background-color: #005bb5;
+}

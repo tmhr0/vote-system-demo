@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="/js/dropdown.js"></script>
+    <script type="module" src="/js/vote-check.js"></script>
+    <script type="module" src="/js/logout.js" defer></script>
+    <script type="module" src="/js/check-login.js" defer></script>
+</head>
+<body class="page">
+    <div class="container">
+        <header class="header top-header">
+          <h1 class="header__title top-header__title">SADOデジタル投票へようこそ</h1>
+          <div class="header__settings-dropdown">
+            <a href="#" class="header__settings-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon icon-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+              </svg>
+            </a>
+            <div class="header__settings-content">
+              <a href="#" id="logout-btn">ログアウト</a>
+              <a href="/vote-reset" id="vote-reset-btn">投票リセット</a>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+            <section class="main-info">
+                <h2 class="main-info__title">2024年度総選挙</h2>
+                <p class="main-info__description">あなたの一票が大きな力となります。<br>11月20日の選挙に備えましょう。</p>
+                <div class="main-info__election-day">
+                    <div>
+                        <h3 class="main-info__election-day-title">選挙投票日</h3>
+                        <span class="main-info__election-day-date">2024年11月20日</span>
+                    </div>
+                    <img src="image/top/top_01.jpg" alt="Election Image" class="main-info__election-day-image">
+                </div>
+            </section>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/candidate" class="nav__link" id="candidate-link">
+                            <div class="nav__link-text">
+                                <h2 class="nav__link-title">候補者一覧</h2>
+                                <span class="nav__link-description">立候補者を見る</span>
+                            </div>
+                            <span class="nav__arrow">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/vote" class="nav__link" id="vote-link">
+                            <div class="nav__link-text">
+                                <h2 class="nav__link-title">投票する</h2>
+                                <span class="nav__link-description">あなたの支持を届けよう</span>
+                            </div>
+                            <span class="nav__arrow">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/vote/result.html" class="nav__link disabled" id="result-link">
+                            <div class="nav__link-text">
+                                <h2 class="nav__link-title">投票結果</h2>
+                                <span class="nav__link-description">すべての投票が完了すると確認できます</span>
+                            </div>
+                            <span class="nav__arrow">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+    <div class="btn-screen hidden">
+        <a href="login" class="blue-btn">ログイン</a>
+    </div>
+</body>
+</html>
