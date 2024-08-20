@@ -40,9 +40,30 @@ document.addEventListener('DOMContentLoaded', async () => {
             <p>${candidate.policies}</p>
             <h3>Vision</h3>
             <p>${candidate.vision}</p>
+            <h3>Video</h3>
+　　           <div class="video-container"></div>
         </div>
     `;
 
+    // 動画を正しく設定するコード例
+    const videoContainer = document.querySelector('.video-container');
+    if (candidate.video_url) {
+        const iframeElement = document.createElement('iframe');
+        iframeElement.width = '400';
+        iframeElement.height = '300';
+        iframeElement.src = candidate.video_url.trim();
+        iframeElement.frameBorder = '0';
+        iframeElement.allowFullscreen = true;
+
+        const videoWrapper = document.createElement('div');
+        videoWrapper.classList.add('video-wrapper');
+        videoWrapper.appendChild(iframeElement);
+
+        videoContainer.appendChild(videoWrapper);
+    } else {
+        videoContainer.textContent = 'ビデオがありません';
+    }
+    
     // 投票ボタンのリンクに候補者IDを付与
     const confirmVoteBtn = document.getElementById('confirm-vote-btn');
     const candidateUrl = `/vote-system-demo/vote/index.html?candidate=${candidate.id}`;
