@@ -36,6 +36,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p class="candidate-attribute__subtitle">${candidate.age}歳(${genderDisplay})</p>
                 <p>${candidate.career}</p>
             </div>
+            <div class="social-links">
+                <div class="social-link">
+                    <a href="#"><img src="/vote-system-demo/image/candidate-detail/twitter-icon.svg" alt="Twitter"></a>
+                    <p>Twitter</p>
+                </div>
+                <div class="social-link">
+                    <a href="#"><img src="/vote-system-demo/image/candidate-detail/facebook-icon.svg" alt="Facebook"></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="social-link">
+                    <a href="#"><img src="/vote-system-demo/image/candidate-detail/instagram-icon.svg" alt="Instagram"></a>
+                    <p>Instagram</p>
+                </div>
+            </div>
             <h3>Policies</h3>
             <p>${candidate.policies}</p>
             <h3>Vision</h3>

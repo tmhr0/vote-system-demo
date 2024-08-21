@@ -27,7 +27,7 @@ export async function generateCandidateCards(candidateListElementId) {
             <input type="radio" name="candidate" value="${candidate.id}" id="candidate-${candidate.id}">
             <div class="candidate-content">
               <div class="radio-custom"></div>
-              <img src="/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
+              <img src="/vote-system-demo/image/candidate/candidate_0${candidate.id}.jpg" alt="${candidate.name}" class="candidate-photo">
               <div class="candidate-info">
                 <h3>${candidate.name}</h3>
                 <p>${candidate.career}</p>
